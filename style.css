@@ -1,0 +1,94 @@
+.header{
+    background: #FFF;
+    height: 80px;
+}
+.inner_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    width: 198px;
+    margin-top: 5px;
+    height: 70px;
+}
+.header_menu{
+    display: flex;
+    gap: 32px;
+}
+.menu_item a{
+    color: black;
+    font-family:"Inter",sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+.btn{
+    display: inline-flex;
+    padding: 15px 73px;
+    justify-content: center;
+    width: 250px;
+    height: 60px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #3BF3D2;
+    color: #000;
+    font-family:"Inter",sans-serif;
+    font-size: 22px;
+    border: 3px solid #4ebeac;
+    font-weight: 500;
+}
+.btn:hover{
+    background: #53e7ce;
+    cursor: pointer;
+}
+.hero{
+    margin-top: 55px;
+}
+.hero_text span{
+    color: #23B1BA;
+}
+.hero_text h1{
+    color: #000;
+    font-family:"Montserrat Alternates",sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    text-align: center;
+}
+.hero_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider_block h2{
+    color: #000;
+    margin-top: 74px;
+    text-align: center;
+    font-family: "Montserrat Alternates",sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+}
+.slider_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 110px;
+    border: 5px solid black;
+    height: 71px;
+    margin-top: 55px;
+    background: white;
+
+}
+.slider_info_nav{
+    width: 500px;
+    text-align: center;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+.slider_info_active{
+    border-left: 5px solid black;
+}

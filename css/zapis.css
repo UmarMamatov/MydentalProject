@@ -1,0 +1,115 @@
+.form_input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+section{
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(149, 223, 233, 0.38);
+    gap: 280px;
+}
+.section_text{
+    padding-top: 20px;
+    height: 100px;
+    color: #000;
+    text-align: center;
+    font-family: "Montserrat Alternates",sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+}
+.section_info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.section_info_input{
+    width: 250px;
+    height: 45px;
+}
+.section_info_item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.imp{
+    color: #F50C0C;
+    font-family: "Montserrat Alternates",sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+.section_info_label{
+    color: #000;
+    font-family: "Montserrat Alternates",sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+.input_checker{
+    color: red;
+}
+
+.selection_time{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.selection_item{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.selection_time p{
+    color: #000;
+    text-align: center;
+    font-family: "Montserrat Alternates",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.section_time_buttons{
+    display: flex;
+    gap: 33px;
+    padding-left: 20px;
+}
+.plus_photo{
+    display: flex;
+    padding: 10px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    background: transparent;
+
+}
+.input_time{
+    width: 282px;
+    height: 87px;
+    padding: 13px 35px;
+    border: 2px black solid;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.input_time_info {
+    width: 66px;
+    height: 61px;
+    background: none;
+    outline: none;
+    border: none;
+    color: #000;
+    text-align: center;
+    font-family: "Montserrat Alternates",sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+.input_border{
+    display: block;
+    border: 1px black solid;
+}

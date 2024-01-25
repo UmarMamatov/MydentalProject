@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Snowy Smile</title>
-    <link rel="stylesheet" href="css/core.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/zapis.css">
+    <title>Приемы</title>
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/zapis.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,21 +13,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wgth@100;400;&display=swap" rel="stylesheet">
-
+</head>
 <body>
 <div class="wrapper">
     <div class="header">
         <div class="container">
             <div class="inner_header">
-                <a href="index.html">
-                    <img class="logo" src="images/logo.svg" alt="logo">
+                <a href="../index.html">
+                    <img class="logo" src="../images/logo.svg" alt="logo">
                 </a>
                 <ul class="header_menu">
                     <li class="menu_item">
                         <a href="#">Услуги</a>
                     </li>
                     <li class="menu_item">
-                        <a href="pages/zapis.html">Запись</a>
+                        <a href="../pages/zapis.html">Запись</a>
                     </li>
                     <li class="menu_item">
                         <a href="https://t.me/mamatt0w" target="_blank">Контакт</a>
@@ -37,52 +37,66 @@
             </div>
         </div>
     </div>
-    <div class="hero">
+    <section>
         <div class="container">
-            <div class="hero_item">
-                <div class="hero_text">
-                    <h1><span>Белоснежный Смайл</span>: Заботимся о вашей улыбке, делаем ее невероятной!</h1>
-                    <button class="hero_button">Записаться на прием</button>
+            <h2 class="section_text">Записаться на Прием</h2>
+            <form action="#">
+                <div class="form_input">
+                    <div class="section_info">
+                        <div class="section_info_item">
+                            <label class="section_info_label" for="name">Имя<span class="imp">*</span></label>
+                            <input type="text" class="section_info_input" id="name" placeholder="Умар" >
+                        </div>
+                        <div class="section_info_item">
+                            <label class="section_info_label" for="surname">Фамилия<span class="imp">*</span></label>
+                            <input type="text" class="section_info_input" id="surname" placeholder="Маматов" >
+                        </div>
+                        <div class="section_info_item">
+                            <label class="section_info_label" for="phone">Номер телефона<span class="imp">*</span></label>
+                            <input type="text" class="section_info_input" id="phone" placeholder="+996 XXX XX-XX-XX" >
+                        </div>
+                        <div class="section_info_item">
+                            <label class="section_info_label" for="gmail">Почта</label>
+                            <input type="text" class="section_info_input" id="gmail" placeholder="example@gmail.com" >
+                        </div>
+                        <span class="input_checker" id="input_result">oshibka</span>
+                    </div>
+                    <div class="selection_time">
+                        <p>Выберите время для приема:</p>
+                        <div class="selection_item">
+                            <div class="section_time_buttons">
+                                <button class="plus_photo">
+                                    <img src="../images/plus.svg" alt="plus">
+                                </button>
+                                <button class="plus_photo">
+                                    <img src="../images/plus.svg" alt="plus">
+                                </button>
+                            </div>
+                            <div class="input_time">
+                                <input type="text" class="input_time_info" id="input_hours"  maxlength="2" pattern="\d{2}:\d{2}" value="00">
+                                <hr class="input_border">
+                                <input type="text" class="input_time_info" id="input_minutes"  maxlength="2" pattern="\d{2}:\d{2}" value="00">
+                            </div>
+                            <div class="section_time_buttons">
+                                <button class="plus_photo">
+                                    <img src="../images/minus.svg" alt="minus">
+                                </button>
+                                <button class="plus_photo">
+                                    <img src="../images/minus.svg" alt="minus">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="hero_image">
-                    <img width="450px" height="450" src="images/teeth.svg" alt="teeth">
-                </div>
-            </div>
+            </form>
         </div>
-    </div>
-    <div class="slider_block">
-        <div class="container">
-            <h2>Наши возможности</h2>
-            <div class="slider_info">
-                <div class="slider_info_header">
-                    <button class="slider_info_nav">
-                        <img src="images/line%20back.png" alt="prev">
-                    </button>
-                    <hr>
-                    <button class="slider_info_nav1">
-                        <img src="images/line%20next.png" alt="next">
-                    </button>
-                </div>
-                <div class="slider_info_content">
-                    <p class="slider_info_item">Lorem ipsum dolor sit amet consectetur. Ut tempor quam dignissim sed fames velit vivamus eu facilisis. Odio quis adipiscing a magna posuere odio pellentesque. Varius amet mattis sagittis volutpat. Magna vulputate euismod nibh fermentum malesuada scelerisque vulputate sit.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="block_video">
-        <div class="container">
-            <h3>Полезный туториал про чистку зубов</h3>
-            <div class="inner_block_video">
-                <iframe width="80%" height="450" src="https://www.youtube.com/embed/37mSNlm8y6I?si=3nyXyOoLJp51h8XW" title="YouTube video player" frameborder="2" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
+    </section>
     <footer>
         <div class="container">
             <div class="footer_item">
                 <div class="footer_inner">
                     <div class="footer_item_logo">
-                        <a href="index.html"><img class="footer_logo" src="images/logo.svg" alt="logo"></a>
+                        <a href="../index.html"><img class="footer_logo" src="../images/logo.svg" alt="logo"></a>
                         <p><span>Белоснежный Смайл</span>: Заботимся о вашей улыбке, делаем ее невероятной!</p>
                     </div>
                     <div class="footer_item_menu">
@@ -128,22 +142,9 @@
             </div>
         </div>
     </footer>
+
+
 </div>
 
-
-
-<!--<div class="modal">-->
-<!--    <h3></h3>-->
-<!--    <div class="modal_content">-->
-<!--        <p></p>-->
-<!--    </div>-->
-<!--    <a href="">Записаться на приём</a>-->
-<!--</div>-->
-
-
-
-
-
 </body>
-<script src="js/main.js"></script>
 </html>

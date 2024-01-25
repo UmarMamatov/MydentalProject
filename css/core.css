@@ -1,5 +1,5 @@
 :root{
-    --bgc:#BAE5F3
+    --bgc: #FFF;
 }
 
 * {
@@ -10,10 +10,18 @@
 body{
     background: var(--bgc) ;
 }
-
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .container {
     width: 1200px;
     margin: 0 auto;
+}
+button{
+    border: none;
+    cursor: pointer;
 }
 a {
     text-decoration: none;

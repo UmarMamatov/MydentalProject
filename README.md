@@ -1,1 +1,1 @@
-# This is my DEntel project
+# This is my Dental project

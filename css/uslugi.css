@@ -1,0 +1,105 @@
+.tab_slider {
+    background: linear-gradient(90deg, rgba(0, 224, 255, 0.33) 1.17%, rgba(54, 148, 215, 0.20) 100%);
+    padding: 100px 100px;
+    width: 100%;
+}
+.tab_content_block {
+    width: 700px;
+    margin: 20px 0;
+    border: 1px solid #1CB1C6;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 170px;
+}
+.tab_content_block h4{
+    font-size: 22px;
+}
+
+.tab_content_block p {
+    color: black;
+    font-size: 16px;
+    font-family: "Montserrat Alternates", sans-serif;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.tab_content_items {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.tab_content_item {
+    padding: 10px;
+    font-family: "Montserrat Alternates", sans-serif;
+    height: 30px;
+    color: black;
+    border: 1px solid #1CB1C6;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+}
+
+.tab_content_item_active {
+    background: #1CB1C6;
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    border: 1px solid white;
+}
+
+.tab_contents_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.price{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.converter {
+    padding: 50px 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 224, 255, 0.33) 1.17%, rgba(54, 148, 215, 0.20) 100%);
+
+}
+.converter_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.inner_converter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.inner_converter > div {
+    display: flex;
+    flex-direction: column;
+}
+.currency{
+    font-size: 20px;
+}
+.ras{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}

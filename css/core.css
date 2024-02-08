@@ -25,8 +25,13 @@ button{
 }
 a {
     text-decoration: none;
+    color: black;
 }
 
 li {
     list-style: none;
+}
+.active{
+    border-bottom: 1px solid #0FF1FF;
+    color: #0FF1FF;
 }

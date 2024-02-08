@@ -24,16 +24,22 @@
                 </a>
                 <ul class="header_menu">
                     <li class="menu_item">
-                        <a href="#">Услуги</a>
+                        <a href="../pages/rabota.html">Наши работы</a>
                     </li>
                     <li class="menu_item">
-                        <a href="../pages/zapis.html">Запись</a>
+                        <a href="../pages/uslugi.html">Услуги</a>
+                    </li>
+                    <li class="menu_item active">
+                        <a class="active" href="../pages/zapis.html">Запись</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="../pages/cards.html">Отзывы</a>
                     </li>
                     <li class="menu_item">
                         <a href="https://t.me/mamatt0w" target="_blank">Контакт</a>
                     </li>
                 </ul>
-                <button class="btn">Click Me!</button>
+                <button id="btn-get" class="btn"> <img src="../images/podar.svg" alt="podar" ></button>
             </div>
         </div>
     </div>
@@ -45,52 +51,61 @@
                     <div class="section_info">
                         <div class="section_info_item">
                             <label class="section_info_label" for="name">Имя<span class="imp">*</span></label>
-                            <input type="text" class="section_info_input" id="name" placeholder="Умар" >
+                            <input type="text" class="section_info_input" id="name" required placeholder="Умар" >
                         </div>
                         <div class="section_info_item">
                             <label class="section_info_label" for="surname">Фамилия<span class="imp">*</span></label>
-                            <input type="text" class="section_info_input" id="surname" placeholder="Маматов" >
+                            <input type="text" class="section_info_input" id="surname" required placeholder="Маматов" >
                         </div>
                         <div class="section_info_item">
                             <label class="section_info_label" for="phone">Номер телефона<span class="imp">*</span></label>
-                            <input type="text" class="section_info_input" id="phone" placeholder="+996 XXX XX-XX-XX" >
+                            <input type="text" class="section_info_input" id="phone" required placeholder="+996 XXX XX-XX-XX" >
                         </div>
                         <div class="section_info_item">
-                            <label class="section_info_label" for="gmail">Почта</label>
-                            <input type="text" class="section_info_input" id="gmail" placeholder="example@gmail.com" >
+                            <label class="section_info_label" for="gmail">Что у вас болит?</label>
+                            <textarea style="outline: none; height: 100px; resize: none; font-size: 16px" class="section_info_input" id="gmail" placeholder="У меня болит..." ></textarea>
                         </div>
-                        <span class="input_checker" id="input_result">oshibka</span>
                     </div>
                     <div class="selection_time">
                         <p>Выберите время для приема:</p>
                         <div class="selection_item">
                             <div class="section_time_buttons">
-                                <button class="plus_photo">
+                                <button id="btnplush" onclick="increaseHour()" class="plus_photo">
                                     <img src="../images/plus.svg" alt="plus">
                                 </button>
-                                <button class="plus_photo">
+                                <button id="btnplusmin" onclick="increaseMin()"  class="plus_photo">
                                     <img src="../images/plus.svg" alt="plus">
                                 </button>
                             </div>
                             <div class="input_time">
-                                <input type="text" class="input_time_info" id="input_hours"  maxlength="2" pattern="\d{2}:\d{2}" value="00">
+                                <input type="text" class="input_time_info" id="input_hours"   maxlength="2" required value="00" >
                                 <hr class="input_border">
-                                <input type="text" class="input_time_info" id="input_minutes"  maxlength="2" pattern="\d{2}:\d{2}" value="00">
+                                <input type="text" class="input_time_info" id="input_minutes"  maxlength="2" required value="00" >
                             </div>
                             <div class="section_time_buttons">
-                                <button class="plus_photo">
+                                <button id="btnminh" onclick="decreaseHour()" class="plus_photo">
                                     <img src="../images/minus.svg" alt="minus">
                                 </button>
-                                <button class="plus_photo">
+                                <button id="btnminmin" onclick="decreaseMin()" class="plus_photo">
                                     <img src="../images/minus.svg" alt="minus">
                                 </button>
                             </div>
+                            <span class="time_table__alert"> </span>
                         </div>
                     </div>
                 </div>
+                <button type="submit" class="btn_sub" id="btn-section">Записаться на прием</button>
             </form>
         </div>
     </section>
+    <div class="teeth_cleaning">
+        <div class="container">
+            <div class="teeth_clean__content">
+                <img class="teeth_clean__img" src="../images/teeth1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <audio id="audio" src="../audio/zvuk-nakonechnik.mp3"></audio>
     <footer>
         <div class="container">
             <div class="footer_item">
@@ -106,45 +121,59 @@
                                     <p class="footer_item_list1">Разделы</p>
                                 </li>
                                 <li>
-                                    <a class="footer_item_list_link"  href="">Запись</a>
+                                    <a class="footer_item_list_link"  href="../pages/zapis.html">Запись</a>
                                 </li>
                                 <li>
-                                    <a class="footer_item_list_link" href="">Услуги</a>
+                                    <a class="footer_item_list_link" href="../pages/uslugi.html">Услуги</a>
                                 </li>
                                 <li>
-                                    <a class="footer_item_list_link" href="">Контакт</a>
+                                    <a href="https://t.me/mamatt0w" target="_blank">Контакт</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="footer_item_menu2">
                             <ul class="footer_item_list">
                                 <li class="footer_item_list1">
-                                    <p>Контакты</p>
+                                    <p>Филиалы</p>
                                 </li>
                                 <li>
-                                    <a class="footer_item_list_link" href="">Телеграм</a>
+                                    <p>Ош</p>
                                 </li>
                                 <li>
-                                    <a class="footer_item_list_link" href="">Инстаграм</a>
+                                    <p>Бишкек</p>
                                 </li>
                                 <li>
-                                    <a class="footer_item_list_link" href="">Контакт</a>
+                                    <p>Жалал-Абад</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <button class="hero_button footer_button">Записаться на прием</button>
+                    <a href="../pages/zapis.html"><button class="hero_button footer_button">Записаться на прием</button></a>
                 </div>
                 <div class="rights">
-                    <p>Все права защищены Snowy Smile 2024</p>
-                    <img src="/images/Vector.svg" alt="rights">
+                    <p>Все права защищены Snowy Smile 2024 &copy;</p>
                 </div>
             </div>
         </div>
     </footer>
-
-
+</div>
+<div class="modal">
+    <div class="modal_dialog">
+        <img class="modal_img" src="../images/modal.png" alt="modal">
+        <div class="modal_content">
+            <div class="modal_close">&times;</div>
+            <div class="modal_aks"> <img src="../images/aks.svg" alt="aks"></div>
+            <h1 class="modal_head">Новогодние зимние скидки</h1>
+            <div class="modal_item">
+                <h3 class="modal_h3">Весь январь <span class="modal_percent">40%</span> на лечение зубов и профгигиену</h3>
+                <p>+ Панорамный рентген</p>
+            </div>
+            <a href="../pages/zapis.html"><button class="modal_btn">Записаться на приём &rarr;</button></a>
+        </div>
+    </div>
 </div>
 
 </body>
+<script src="../js/modal.js"></script>
+<script src="../js/zapis.js"></script>
 </html>

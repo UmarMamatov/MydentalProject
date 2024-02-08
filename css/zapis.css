@@ -31,6 +31,7 @@ section{
 .section_info_input{
     width: 250px;
     height: 45px;
+    outline: none;
 }
 .section_info_item{
     display: flex;
@@ -113,3 +114,60 @@ section{
     display: block;
     border: 1px black solid;
 }
+
+.btn_sub{
+    display: flex;
+    width: 250px;
+    height: 45px;
+    padding: 16px 53px 14px 53px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    font-family: "Montserrat Alternates",sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+.btn_sub:hover{
+    background: white;
+    border: 1px solid black;
+    color: black;
+    width: 260px;
+    font-weight: bold;
+    transition: .7s;
+    transform: scale(1.1);
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.time_table__alert {
+    width: 290px;
+    text-align: center;
+    font-family: "Montserrat Alternates",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+/*/////////////// Teeth game*/
+.teeth_clean__content {
+    margin: 0 auto;
+    cursor: url("/images/nakon1.png"),auto;
+
+}
+.teeth_clean__img  {
+    display: flex;
+    margin-left: 50vh;
+
+}
+
+
+
+
+/*/////////////// Teeth game*/

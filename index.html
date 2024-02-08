@@ -5,7 +5,6 @@
     <title>Snowy Smile</title>
     <link rel="stylesheet" href="css/core.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/zapis.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,16 +23,24 @@
                 </a>
                 <ul class="header_menu">
                     <li class="menu_item">
-                        <a href="#">Услуги</a>
+                        <a href="pages/rabota.html">Наши работы</a>
                     </li>
                     <li class="menu_item">
-                        <a href="pages/zapis.html">Запись</a>
+                        <a href="pages/uslugi.html">Услуги</a>
+                    </li>
+                    <li class="menu_item">
+                        <a  href="pages/zapis.html">Запись</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="pages/cards.html">Отзывы</a>
                     </li>
                     <li class="menu_item">
                         <a href="https://t.me/mamatt0w" target="_blank">Контакт</a>
                     </li>
                 </ul>
-                <button class="btn">Click Me!</button>
+                <button id="btn-get" class="btn">
+                    <img src="images/podar.svg" alt="podar" >
+                </button>
             </div>
         </div>
     </div>
@@ -42,7 +49,7 @@
             <div class="hero_item">
                 <div class="hero_text">
                     <h1><span>Белоснежный Смайл</span>: Заботимся о вашей улыбке, делаем ее невероятной!</h1>
-                    <button class="hero_button">Записаться на прием</button>
+                    <a href="pages/zapis.html"><button class="hero_button">Записаться на прием</button></a>
                 </div>
                 <div class="hero_image">
                     <img width="450px" height="450" src="images/teeth.svg" alt="teeth">
@@ -52,7 +59,7 @@
     </div>
     <div class="slider_block">
         <div class="container">
-            <h2>Наши возможности</h2>
+            <h2 class="slider-head">Наши возможности</h2>
             <div class="slider_info">
                 <div class="slider_info_header">
                     <button class="slider_info_nav">
@@ -64,7 +71,22 @@
                     </button>
                 </div>
                 <div class="slider_info_content">
-                    <p class="slider_info_item">Lorem ipsum dolor sit amet consectetur. Ut tempor quam dignissim sed fames velit vivamus eu facilisis. Odio quis adipiscing a magna posuere odio pellentesque. Varius amet mattis sagittis volutpat. Magna vulputate euismod nibh fermentum malesuada scelerisque vulputate sit.</p>
+                    <h2 id="slider_info__heading"></h2>
+                    <p  id="slider_info__text" class="slider_info_item"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="animation_block">
+        <div class="container">
+            <div class="anim">
+                <div class="wrapper_animation">
+                    <div class="loader">
+                        <span><img style="width: 200px" src="https://www.pngmart.com/files/17/Healthy-Tooth-PNG-Pic.png" alt="Teeth image"></span>
+                        <span><img style="width: 100px" src="https://www.presi-dent.ru/files/catalog/items/0/image_thumb-23.png" alt="Teeth image"></span>
+                        <span><img style="width: 100px" src="https://aveldent.ru/image/cache/258/ximport-files-01-0185f0bd-d29f-11ec-80d7-0cc47aab4f67-0185f0bf-d29f-11ec-80d7-0cc47aab4f67.png-258x258.png.pagespeed.ic.ym0QChJbmR.png" alt="Teeth image"></span>
+                        <span><img style="width: 100px" src="https://www.colgate.ru/content/dam/cp-sites/oral-care/oral-care-center/ru-ru/sub-brands-pages/calciumremin/colgate-total-toothpaste-calcium-remin-ru-ru.png" alt="Teeth image"></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -92,38 +114,37 @@
                                     <p class="footer_item_list1">Разделы</p>
                                 </li>
                                 <li>
-                                    <a class="footer_item_list_link"  href="">Запись</a>
+                                    <a class="footer_item_list_link"  href="pages/zapis.html">Запись</a>
                                 </li>
                                 <li>
-                                    <a class="footer_item_list_link" href="">Услуги</a>
+                                    <a class="footer_item_list_link" href="pages/uslugi.html">Услуги</a>
                                 </li>
                                 <li>
-                                    <a class="footer_item_list_link" href="">Контакт</a>
+                                     <a href="https://t.me/mamatt0w" target="_blank">Контакт</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="footer_item_menu2">
                             <ul class="footer_item_list">
                                 <li class="footer_item_list1">
-                                    <p>Контакты</p>
+                                    <p>Филиалы</p>
                                 </li>
                                 <li>
-                                    <a class="footer_item_list_link" href="">Телеграм</a>
+                                    <p>Ош</p>
                                 </li>
                                 <li>
-                                    <a class="footer_item_list_link" href="">Инстаграм</a>
+                                    <p>Бишкек</p>
                                 </li>
                                 <li>
-                                    <a class="footer_item_list_link" href="">Контакт</a>
+                                    <p>Жалал-Абад</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <button class="hero_button footer_button">Записаться на прием</button>
+                    <a href="pages/zapis.html"><button class="hero_button footer_button">Записаться на прием</button></a>
                 </div>
                 <div class="rights">
-                    <p>Все права защищены Snowy Smile 2024</p>
-                    <img src="/images/Vector.svg" alt="rights">
+                    <p>Все права защищены Snowy Smile 2024 &copy;</p>
                 </div>
             </div>
         </div>
@@ -132,13 +153,21 @@
 
 
 
-<!--<div class="modal">-->
-<!--    <h3></h3>-->
-<!--    <div class="modal_content">-->
-<!--        <p></p>-->
-<!--    </div>-->
-<!--    <a href="">Записаться на приём</a>-->
-<!--</div>-->
+<div class="modal">
+    <div class="modal_dialog">
+        <img class="modal_img" src="images/modal.png" alt="modal">
+        <div class="modal_content">
+                <div class="modal_close">&times;</div>
+                <div class="modal_aks"> <img src="images/aks.svg" alt="aks"></div>
+                <h1 class="modal_head">Новогодние зимние скидки</h1>
+                <div class="modal_item">
+                    <h3 class="modal_h3">Весь январь <span class="modal_percent">40%</span> на лечение зубов и профгигиену</h3>
+                    <p>+ Панорамный рентген</p>
+                </div>
+               <a href="pages/zapis.html"><button class="modal_btn">Записаться на приём &rarr;</button></a>
+        </div>
+    </div>
+</div>
 
 
 
@@ -146,4 +175,5 @@
 
 </body>
 <script src="js/main.js"></script>
+<script src="js/modal.js"></script>
 </html>

@@ -6,7 +6,7 @@ const openModel = ()=>{
     modal.style.display = "block"
     document.body.style.overflow = 'hidden'
 }
-// setTimeout(openModel,5000)
+
 
 clickMe.onclick = ()=>{
     openModel();

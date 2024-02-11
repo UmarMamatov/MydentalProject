@@ -6,8 +6,7 @@ const openModel = ()=>{
     modal.style.display = "block"
     document.body.style.overflow = 'hidden'
 }
-
-
+//why deleted
 clickMe.onclick = ()=>{
     openModel();
 };

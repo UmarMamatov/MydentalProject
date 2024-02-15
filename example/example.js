@@ -1,1 +1,1 @@
-console.log("gogogogogo");
+let b = 25;

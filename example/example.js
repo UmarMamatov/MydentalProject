@@ -1,1 +1,1 @@
-console.log('Hello world!');
+let b = 25;
